@@ -1,0 +1,114 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY BACKGROUND */
+body{
+    background:
+    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url("teacher.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height:100vh;
+    color:white;
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("help.png");
+}
+
+/* MAIN CONTAINER */
+.help-container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+/* TITLE */
+.help-container h1{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+/* GRID */
+.help-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap:30px;
+}
+
+/* BASE BOX */
+.help-box{
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(10px);
+
+    padding:25px;
+    border-radius:18px;
+
+    box-shadow:0 0 25px rgba(0,0,0,0.6);
+
+    transition: all 0.35s ease;
+}
+
+/* DIFFERENT BOX STYLES */
+.box1{ border-left:4px solid #00c6ff; }
+.box2{ border-top:4px solid #00ffcc; }
+.box3{ border-right:4px solid #ff4d6d; }
+.box4{ border-bottom:4px solid #ffd166; }
+.box5{ border-left:4px solid #a78bfa; }
+
+/* HOVER */
+.help-box:hover{
+    transform: translateY(-10px) scale(1.02);
+    box-shadow:0 15px 35px rgba(0,0,0,0.8);
+}
+
+/* TEXT */
+.help-box h2{
+    margin-bottom:10px;
+    color:#00c6ff;
+}
+
+.help-box p{
+    line-height:1.6;
+    margin-bottom:10px;
+}
+
+.help-box ul{
+    margin-left:20px;
+}
+
+.help-box li{
+    margin-bottom:6px;
+}
+
+/* BUTTON */
+button{
+    display:block;
+    margin:50px auto 0;
+
+    width:220px;
+    height:45px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#00c6ff;
+    color:white;
+    font-size:16px;
+
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0072ff;
+    transform: scale(1.05);
+}

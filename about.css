@@ -1,0 +1,100 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.85)),
+url("background.jpg");
+
+background-size:cover;
+background-position:center;
+color:white;
+min-height:100vh;
+padding:40px;
+
+ background:
+    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url("about.png");
+
+}
+
+/* TITLE */
+.title{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+color:#e5e7eb;
+}
+
+/* GRID */
+.card-container{
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+gap:70px;
+max-width:1100px;
+margin:auto;
+}
+
+/* CARD BASE */
+.card{
+background: rgba(0,0,0,0.65);
+backdrop-filter: blur(10px);
+padding:25px;
+border-radius:18px;
+box-shadow:0 0 25px rgba(0,0,0,0.7);
+transition:0.3s;
+}
+
+/* DIFFERENT NEON BORDERS */
+.card1{ border-left:4px solid #00e5ff; }
+.card2{ border-left:4px solid #00ffcc; }
+.card3{ border-left:4px solid #ff4d6d; }
+.card4{ border-left:4px solid #ffd166; }
+.card5{ border-left:4px solid #9b5cff; }
+
+/* HOVER */
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.9);
+}
+
+/* TEXT */
+.card h2{
+color:#00e5ff;
+margin-bottom:10px;
+}
+
+.card p{
+color:#cbd5e1;
+line-height:1.6;
+}
+
+.card ul{
+margin-left:20px;
+}
+
+.card li{
+margin-bottom:6px;
+}
+
+/* BUTTON */
+button{
+display:block;
+margin:50px auto 0;
+width:180px;
+height:45px;
+border:none;
+border-radius:10px;
+background:#00c6ff;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0095c8;
+}
