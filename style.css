@@ -1,93 +1,117 @@
-/* Full Page Background */
-body{
-    margin:0;
-    padding:0;
-    font-family: Arial, sans-serif;
-
-    /* Dark overlay for background image */
-    background:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url("login2.jpg");
-    
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Login Box */
-.login-box{
-    width:350px;
-    padding:40px;
-
-    /* Dark glass effect */
-    background: rgba(0,0,0,0.65);
-    backdrop-filter: blur(12px);
-
-    border-radius:15px;
-    text-align:center;
-    color:white;
-
-    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+/* Prevent overlap with fixed header */
+body {
+    padding-top: 80px;
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Heading */
-.login-box h1{
-    margin-bottom:10px;
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1e3a8a;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
 }
 
-/* Inputs Normal */
-.login-box input{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-
-    border:2px solid transparent;
-    border-radius:8px;
-
-    outline:none;
-
-    background: rgba(255,255,255,0.9);
-
-    transition: 0.3s;
+.logo {
+    font-size: 22px;
+    font-weight: bold;
 }
 
-/* Inputs Focus Highlight */
-.login-box input:focus{
-    border:2px solid #00c6ff;
+.navbar nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
 
-    box-shadow:
-        0 0 5px #00c6ff,
-        0 0 10px #00c6ff;
+.navbar nav a:hover,
+.navbar nav a.active {
+    text-decoration: underline;
+}
 
+/* Signup Button */
+.signup-btn {
+    background: white;
+    color: #1e3a8a !important;
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.btn {
+    background: white;
+    color: #1e3a8a;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Features */
+.features {
+    padding: 60px 40px;
     background: white;
 }
 
-/* Button */
-.login-box button{
-    width:100%;
-    padding:12px;
-
-    border:none;
-    border-radius:8px;
-
-    background:#00c6ff;
-    color:white;
-    font-size:16px;
-
-    cursor:pointer;
-    transition:0.3s;
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-/* Button Hover */
-.login-box button:hover{
-    background:#0072ff;
-    transform: scale(1.03);
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
+.card {
+    background: #f1f5f9;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
 
+/* How it Works */
+.how-it-works {
+    padding: 60px 40px;
+}
+
+.how-it-works h2 {
+    text-align: center;
+}

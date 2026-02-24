@@ -1,20 +1,67 @@
-<div class="login-box">
-
-    <h1>Login</h1>
-    <head>
-    <title>Student Sign Up - Attendance System</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Click | Automated Attendance System</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-    <input type="text" placeholder="Username">
-    <input type="password" placeholder="Password">
+    <!-- Fixed Header -->
+    <header class="navbar">
+        <div class="logo">Smart Click</div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="help.html">Help</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </nav>
+    </header>
 
-    <button>Login</button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Smart Click</h1>
+        <p>An Automated Attendance System Using Face Recognition</p>
+        <a href="#" class="btn">Get Started</a>
+    </section>
 
-    <!-- ADD HERE -->
-    <p style="margin-top:15px; color:white;">
-        Don't have an account?
-        <a href="signup.html" style="color:#00c6ff;">Sign Up</a>
-    </p>
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+            <div class="card">
+                <h3>📷 Image-Based Attendance</h3>
+                <p>Upload classroom images to automatically mark attendance.</p>
+            </div>
+            <div class="card">
+                <h3>🧠 Face Recognition</h3>
+                <p>OpenCV-based facial recognition prevents proxy attendance.</p>
+            </div>
+            <div class="card">
+                <h3>📊 Attendance Reports</h3>
+                <p>Attendance records stored securely in MySQL database.</p>
+            </div>
+            <div class="card">
+                <h3>⚡ Time Efficient</h3>
+                <p>Eliminates roll calls and saves valuable classroom time.</p>
+            </div>
+        </div>
+    </section>
 
-</div>
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <ol>
+            <li>Teacher captures classroom photo after the session</li>
+            <li>Image is uploaded to the Smart Click system</li>
+            <li>Faces are detected and matched using OpenCV</li>
+            <li>Attendance is stored automatically in MySQL</li>
+        </ol>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: smartclick.proje
